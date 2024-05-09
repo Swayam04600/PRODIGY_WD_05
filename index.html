@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <div class="search">
+            <input id="city-input" type="text" placeholder="Enter City Name" spellcheck="false" aria-label="Enter city name">
+            <button id="search-btn" aria-label="Search"><img src="./image/search.png" alt="Search Icon"></button>
+        </div>
+        <div id="error-message" class="error">
+            <p>Invalid city name. Please try again.</p>
+        </div>
+        <div class="weather" id="weather-box">
+            <img id="weather-icon" class="weather-icon" alt="Weather Icon">
+            <h1 id="temperature" class="temp"></h1>
+            <h2 id="city-name" class="city"></h2>
+            <div class="details">
+                <div class="col">
+                    <img src="./image/humidity.jpg" alt="Humidity Icon">
+                    <div>
+                        <p id="humidity" class="humidity"></p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./image/wind.jpg" alt="Wind Icon">
+                    <div>
+                        <p id="wind-speed" class="wind"></p>
+                        <p>Wind speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="loading" class="loading">Loading...</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

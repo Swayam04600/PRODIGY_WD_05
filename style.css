@@ -1,0 +1,128 @@
+/* Reset margins and paddings for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background color for the body */
+body {
+    background-color: hsla(0, 6%, 77%, 0.847);
+    color: #f8f7f8;
+    text-align: center;
+}
+
+/* Card styling */
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    margin: 100px auto;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Search section styling */
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* Search input field */
+#city-input {
+    background: #ebfffc;
+    padding: 10px 20px;
+    height: 40px;
+    border-radius: 20px;
+    flex: 1;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+/* Search button styling */
+#search-btn {
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#search-btn:hover {
+    background-color: #cfeff9;
+}
+
+img{
+    width: 30px;
+    mix-blend-mode: screen;
+}
+
+/* Error message */
+.error {
+    color: #ff6b6b;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+/* Weather section */
+.weather {
+    display: none;
+    margin-top: 20px;
+}
+
+
+/* Weather icon styling */
+.weather-icon {
+    width: 170px;
+    margin-bottom: 20px;
+}
+
+/* Weather information */
+.temp {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+.city {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Weather details section */
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.humidity, .wind {
+    font-size: 18px;
+}
+
+.loading {
+    display: none;
+    font-size: 24px;
+    margin-top: 20px;
+}
